@@ -1,20 +1,68 @@
 .navbar {
-  background-color: black;
-  color: white;
-}
-.navbar-container {
-}
-.navbar-list {
-  list-style-type: none;
+  height: 80px;
   display: flex;
-  padding: 5px;
+  justify-content: start;
   align-items: center;
-  justify-content: space-around;
 }
-.navbar-list a {
+
+.menu-bars {
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+}
+
+.nav-menu {
+  background-color: black;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: 850ms;
+}
+
+.nav-menu.active {
+  right: 0;
+  transition: 350ms;
+}
+
+.nav-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 16px 8px 0px;
+  list-style: none;
+  height: 60px;
+}
+
+.nav-text a {
   text-decoration: none;
   color: white;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
 }
-.navbar-list a:hover {
-  color: aqua;
+
+.nav-text a:hover,
+.nav-text a:active,
+.close-icon:hover,
+.close-icon:active,
+.open-icon:hover,
+.open-icon:active {
+  color: #e95a00;
+}
+
+.close-icon {
+  color: white;
+  cursor: pointer;
+}
+
+.open-icon {
+  cursor: pointer;
 }
