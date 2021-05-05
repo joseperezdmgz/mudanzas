@@ -10,3 +10,39 @@
   height: 50px;
   width: 50px;
 }
+
+.form-container a {
+  color: black;
+}
+
+.form-container a:hover,
+.form-container a:active {
+  color: #e95a00;
+}
+
+#contact_form div {
+  margin: 2vw;
+}
+
+#contact_form input,
+#contact_form select,
+#contact_form textarea {
+  box-shadow: 5px 4px 5px teal;
+}
+
+#contact_form textarea {
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+#contact_form select {
+  font-weight: lighter;
+}
+
+#form_button {
+  background-color: #e95a00;
+  color: white;
+  border: 2px solid #e95a00;
+  border-radius: 4px;
+  padding: 3% 7%;
+}

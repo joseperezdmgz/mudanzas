@@ -2,6 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  /**STICKY HEADER**/
+  position: sticky;
+  top: 0px;
+  background-color: rgb(145, 108, 108);
+  z-index: 50;
 }
 
 .header-img {

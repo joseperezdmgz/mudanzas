@@ -4,8 +4,12 @@ import { AiOutlineMail } from "react-icons/ai";
 export default function Form() {
   return (
     <div className="form-container">
+      <a id="linktocontact" href></a>
+
       <h1>Consulta con nosotros</h1>
-      <AiOutlineMail className="mail-icon" />
+      <a href="mailto:call4mefb@gmail.com">
+        <AiOutlineMail className="mail-icon" />
+      </a>
       <form action="#" method="post" id="contact_form">
         <div className="name">
           <label for="name"></label>
