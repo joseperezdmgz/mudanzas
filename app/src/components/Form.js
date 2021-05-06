@@ -6,7 +6,7 @@ export default function Form() {
     <div className="form-container">
       <a id="linktocontact" href></a>
 
-      <h1>Consulta con nosotros</h1>
+      <h1>Contacta con nosotros</h1>
       <a href="mailto:call4mefb@gmail.com">
         <AiOutlineMail className="mail-icon" />
       </a>

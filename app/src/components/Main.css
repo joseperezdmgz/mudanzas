@@ -9,9 +9,10 @@
 }
 
 .whatsapp-logo {
-  background-color: green;
+  background-color: rgb(77, 194, 71);
   color: white;
-  border-radius: 25%;
+  border-radius: 100%;
+  padding: 7px;
   height: 50px;
   width: 50px;
 }
