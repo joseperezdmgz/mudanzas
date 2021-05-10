@@ -1,5 +1,4 @@
 /************** PRINCIPAL ********************/
-
 .whatsapp {
   position: fixed;
   bottom: 2vh;
@@ -55,34 +54,43 @@
 }
 
 /************** SERVICIOS ********************/
-
 .services-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  background-color: rgb(191, 205, 216);
+  padding: 0 10%;
 }
 
-.service:nth-child(2n + 1) {
-  background-color: rgb(71, 203, 255);
+.subtitle {
+  text-align: left;
+  margin: 0;
 }
 
 .service {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  margin: 4vh 8vh;
-  padding: 3vw;
-  background-color: rgb(191, 205, 216);
-  border-radius: 4px;
 }
 
-.service img {
-  width: 50%;
+.service a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.service p {
+.service a:hover {
+  color: #e95a00;
+}
+
+.service a:active {
+  color: #e95a00;
+}
+
+.services-container p {
   opacity: 0.4;
-  padding: 0 4vw 2vh 4vw;
+  padding: 0 0 2vh 0;
+  text-align: left;
 }

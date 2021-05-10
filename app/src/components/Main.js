@@ -6,9 +6,11 @@ import ImageZoom from "react-medium-image-zoom";
 export default function Main() {
   return (
     <div id="#main">
+      <a id="linktoservices" href></a>
       <a href="https://wa.me/88888888" className="whatsapp" target="_blank">
         <AiOutlineWhatsApp className="whatsapp-logo" />
       </a>
+      <Services />
       <a id="linktomain" href></a>
       <div id="media-gallery">
         <ImageZoom
@@ -57,8 +59,6 @@ export default function Main() {
           }}
         />
       </div>
-      <a id="linktoservices" href></a>
-      <Services />
     </div>
   );
 }
