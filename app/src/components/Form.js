@@ -2,6 +2,20 @@ import "./Form.css";
 import { AiOutlineMail } from "react-icons/ai";
 
 export default function Form() {
+  const sendForm = (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById("name_input").value;
+    const email = document.getElementById("email_input").value;
+    const telephone = document.getElementById("telephone_input").value;
+    const subject = document.getElementById("subject_input").value;
+    const message = document.getElementById("message_input").value;
+
+    console.log(
+      `Nombre: ${name} - Email: ${email} - Teléfono: ${telephone} - Asunto: ${subject} - Mensaje: ${message}`
+    );
+  };
+
   return (
     <div className="form-container">
       <a id="linktocontact" href></a>
@@ -10,7 +24,7 @@ export default function Form() {
       <a href="mailto:call4mefb@gmail.com">
         <AiOutlineMail className="mail-icon" />
       </a>
-      <form action="#" method="post" id="contact_form">
+      <form id="contact_form" onSubmit={sendForm}>
         <div className="name">
           <label for="name"></label>
           <input
