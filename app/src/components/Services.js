@@ -31,7 +31,7 @@ export default function Services() {
           Más sobre nosotros
         </a>
       </div>
-      <p>{displayService}</p>
+      <div className="service-container-text">{displayService}</div>
     </div>
   );
 }
