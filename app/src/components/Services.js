@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Servicios from "../service-items/Servicios";
-import Precios from "../service-items/Precios";
-import Mas from "../service-items/Mas";
+import Servicios from "./service-items/Servicios";
+import Precios from "./service-items/Precios";
+import Mas from "./service-items/Mas";
 
 export default function Services() {
   const [displayService, setDisplayService] = useState(Servicios);

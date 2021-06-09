@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
+/* eslint-disable react/jsx-no-target-blank */
 import "./Main.css";
 import Services from "./Services";
 import { AiOutlineWhatsApp } from "react-icons/ai";

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import "./Form.css";
 import { AiOutlineMail } from "react-icons/ai";
 
@@ -18,7 +19,7 @@ export default function Form() {
 
   return (
     <div className="form-container">
-      <a id="linktocontact" href></a>
+      <a id="linktocontact" href="#linktocontact"></a>
 
       <h1>Contacta con nosotros</h1>
       <a href="mailto:call4mefb@gmail.com">

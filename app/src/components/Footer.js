@@ -11,8 +11,8 @@ export default function Footer() {
           <SiInstagram className="logo-red-social"></SiInstagram>
         </div>
         <div className="legal-container">
-          <a href="#">Aviso Legal</a>
-          <a href="#">Política de Privacidad</a>
+          <a href="#aviso">Aviso Legal</a>
+          <a href="#politica">Política de Privacidad</a>
           <p>NOMADA LOGISTICA © 2021</p>
         </div>
       </div>

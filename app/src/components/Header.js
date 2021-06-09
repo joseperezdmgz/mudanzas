@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import "./Header.css";
 import NavBar from "./NavBar";
 

@@ -1,7 +1,9 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import "./NavBar.css";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const [sidebar, setSidebar] = useState(false);
@@ -36,6 +38,9 @@ export default function NavBar() {
           </li>
           <li className="nav-text">
             <a href="#linktocontact">Contacto</a>
+          </li>
+          <li>
+            <Link to={"/login"}>Soy Nómada</Link>
           </li>
         </ul>
       </nav>
