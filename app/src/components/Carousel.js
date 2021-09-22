@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "./Carousel.css";
+import "./css/Carousel.css";
 
 const slides = [
-  <div className="slide">
+  <div className="slide" key={0}>
     <div>
-      <h1>Esse dolore voluptate ipsum irure sint quis excepteur irure.</h1>
+      <h1>0 - Esse dolore voluptate ipsum irure sint quis excepteur irure.</h1>
       <p>
         Ea excepteur in commodo id cillum sunt excepteur adipisicing labore non.
         Labore adipisicing ipsum anim magna ex incididunt. Id veniam pariatur
@@ -14,9 +14,10 @@ const slides = [
     </div>
     <img alt="" src="carretera.png" />
   </div>,
-  <div className="slide">
+  <div className="slide" key={1}>
+    <img alt="" src="frente.png" />
     <div>
-      <h1>Esse dolore voluptate ipsum irure sint quis excepteur irure.</h1>
+      <h1>1 - Esse dolore voluptate ipsum irure sint quis excepteur irure.</h1>
       <p>
         Ea excepteur in commodo id cillum sunt excepteur adipisicing labore non.
         Labore adipisicing ipsum anim magna ex incididunt. Id veniam pariatur
@@ -24,11 +25,10 @@ const slides = [
         exercitation. Eu sit excepteur ipsum quis ea est.
       </p>
     </div>
-    <img alt="" src="frente.png" />
   </div>,
-  <div className="slide">
+  <div className="slide" key={2}>
     <div>
-      <h1>Esse dolore voluptate ipsum irure sint quis excepteur irure.</h1>
+      <h1>2 - Esse dolore voluptate ipsum irure sint quis excepteur irure.</h1>
       <p>
         Ea excepteur in commodo id cillum sunt excepteur adipisicing labore non.
         Labore adipisicing ipsum anim magna ex incididunt. Id veniam pariatur
@@ -38,9 +38,10 @@ const slides = [
     </div>
     <img alt="" src="interior.png" />
   </div>,
-  <div className="slide">
+  <div className="slide" key={3}>
+    <img alt="" src="playa.png" />
     <div>
-      <h1>Esse dolore voluptate ipsum irure sint quis excepteur irure.</h1>
+      <h1>3 - Esse dolore voluptate ipsum irure sint quis excepteur irure.</h1>
       <p>
         Ea excepteur in commodo id cillum sunt excepteur adipisicing labore non.
         Labore adipisicing ipsum anim magna ex incididunt. Id veniam pariatur
@@ -48,27 +49,52 @@ const slides = [
         exercitation. Eu sit excepteur ipsum quis ea est.
       </p>
     </div>
-    <img alt="" src="playa.png" />
   </div>,
 ];
 
 export default function Carousel() {
-  const [activeSlide, setActiveSlide] = useState(slides[0]);
-
-  let count = 0;
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       // eslint-disable-next-line react-hooks/exhaustive-deps
-      if (count >= slides.length) count = 0;
-      setActiveSlide(slides[count]);
-      count++;
-    }, 5000);
+      if (currentSlide === 3) {
+        setCurrentSlide(0);
+      } else {
+        setCurrentSlide((prevState) => prevState + 1);
+      }
+    }, 4000);
 
     return () => {
       clearInterval(interval);
     };
-  }, []);
+  }, [currentSlide]);
 
-  return <div className="carousel-wrapper">{activeSlide}</div>;
+  const handleBackbtn = () => {
+    if (currentSlide === 0) {
+      setCurrentSlide(3);
+    } else {
+      setCurrentSlide((prevState) => prevState - 1);
+    }
+  };
+
+  const handleForwardbtn = () => {
+    if (currentSlide === 3) {
+      setCurrentSlide(0);
+    } else {
+      setCurrentSlide((prevState) => prevState + 1);
+    }
+  };
+
+  return (
+    <div className="carousel-wrapper">
+      <button className="backbtn" onClick={handleBackbtn}>
+        &#x21e6;
+      </button>
+      {slides[currentSlide]}
+      <button className="forwardbtn" onClick={handleForwardbtn}>
+        &#x21e8;
+      </button>
+    </div>
+  );
 }

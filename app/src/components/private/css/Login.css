@@ -2,15 +2,6 @@ html {
   height: 100%;
 }
 
-body {
-  background: rgb(135, 206, 250);
-  background: no-repeat
-    linear-gradient(
-      180deg,
-      rgba(135, 206, 250, 1) 0%,
-      rgba(255, 255, 255, 1) 100%
-    );
-}
 .profileImage {
   height: 150px;
   width: 150px;
@@ -36,7 +27,7 @@ body {
   background: red;
   padding-left: 30px;
   margin-top: 2%;
-  background-color: white;
+  background-color: #fdfdfd;
   border-radius: 25px;
   height: 48px;
 }
@@ -44,7 +35,7 @@ body {
   background: blue;
   padding-left: 30px;
   margin-top: 2%;
-  background-color: white;
+  background-color: #fdfdfd;
   border-radius: 25px;
   height: 48px;
 }
@@ -53,7 +44,7 @@ body {
   background: yellow;
   padding-left: 30px;
   margin-top: 2%;
-  background-color: white;
+  background-color: #fdfdfd;
   border-radius: 25px;
   height: 48px;
 }
@@ -101,7 +92,7 @@ body {
   margin-top: 25px;
 }
 .recPass {
-  color: black;
+  color: #2f2f2f;
   text-decoration: none;
 }
 .recPass:hover {
@@ -135,7 +126,7 @@ body {
     background: green;
     padding-left: 20px;
     margin-top: 2%;
-    background-color: white;
+    background-color: #fdfdfd;
     border-radius: 25px;
     height: 48px;
   }
@@ -143,16 +134,16 @@ body {
     background: purple;
     padding-left: 20px;
     margin-top: 2%;
-    background-color: white;
+    background-color: #fdfdfd;
     border-radius: 25px;
     height: 48px;
   }
   .userPass,
   .userRPass {
-    background: black;
+    background: #2f2f2f;
     padding-left: 20px;
     margin-top: 2%;
-    background-color: white;
+    background-color: #fdfdfd;
     border-radius: 25px;
     height: 48px;
   }

@@ -1,0 +1,38 @@
+.carousel-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8ff;
+  padding: 5rem;
+}
+
+.slide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  animation-name: slideInFromLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  height: 500px;
+}
+
+.slide img {
+  margin: 25px;
+}
+
+.backbtn,
+.forwardbtn {
+  background-color: transparent;
+  border: none;
+  font-size: 5rem;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

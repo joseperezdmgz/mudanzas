@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-import "./Header.css";
-import NavBar from "./NavBar";
+import "./css/Header.css";
+import Navigation from "./Navigation";
 
 export default function Header() {
   return (
@@ -8,7 +8,7 @@ export default function Header() {
       <a id="linktohome" href></a>
       <div className="header-container">
         <img src="logo-completo.png" alt="logo" className="header-img"></img>
-        <NavBar></NavBar>
+        <Navigation></Navigation>
       </div>
     </>
   );

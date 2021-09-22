@@ -1,37 +1,31 @@
 import { useState } from "react";
 import Servicios from "./service-items/Servicios";
 import Precios from "./service-items/Precios";
-import Mas from "./service-items/Mas";
+import SobreNosotros from "./service-items/SobreNosotros";
+import "./css/Services.css";
 
 export default function Services() {
   const [displayService, setDisplayService] = useState(Servicios);
 
   const changeDisplay = (e) => {
-    if (e.target.text === "Servicios") {
+    if (e.target.innerHTML === "Servicios") {
       setDisplayService(Servicios);
-    } else if (e.target.text === "Precios") {
+    } else if (e.target.innerHTML === "Precios") {
       setDisplayService(Precios);
     } else {
-      setDisplayService(Mas);
+      setDisplayService(SobreNosotros);
     }
   };
 
   return (
     <div className="services-container">
-      <h3>¿Qué ofrecemos?</h3>
-      <p className="subtitle">Servicios a nivel nacional e internacional</p>
-      <div className="service">
-        <a href onClick={changeDisplay}>
-          Servicios
-        </a>
-        <a href onClick={changeDisplay}>
-          Precios
-        </a>
-        <a href onClick={changeDisplay}>
-          Más sobre nosotros
-        </a>
+      <h1 className="services-title">Nuestros Servicios</h1>
+      <div className="services">
+        <button onClick={changeDisplay}>Servicios</button>
+        <button onClick={changeDisplay}>Precios</button>
+        <button onClick={changeDisplay}>Sobre Nosotros</button>
       </div>
-      <p>{displayService}</p>
+      {displayService}
     </div>
   );
 }

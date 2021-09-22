@@ -1,0 +1,52 @@
+.services-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fdfdfd;
+  padding: 1.5rem 18%;
+  justify-content: center;
+}
+
+.services-title {
+  font-size: 3rem;
+  place-self: center;
+}
+
+.services {
+  font-size: 1.5rem;
+  grid-column: 1 / span 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.services button {
+  background-color: #e95a00;
+  color: #fdfdfd;
+  border: 1px solid #e95a00;
+  border-radius: 5%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  place-self: center;
+  padding: 0.5rem;
+  width: 15rem;
+}
+
+.services button:hover {
+  background-color: #fdfdfd;
+  color: #e95a00;
+  border: 1px solid #e95a00;
+}
+
+.services button:active {
+  animation-name: clickerino;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes clickerino {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.78);
+  }
+}

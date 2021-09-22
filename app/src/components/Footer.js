@@ -1,4 +1,4 @@
-import "./Footer.css";
+import "./css/Footer.css";
 import { SiFacebook, SiInstagram } from "react-icons/si";
 
 export default function Footer() {

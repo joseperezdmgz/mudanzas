@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-import "./Form.css";
+import "./css/Form.css";
 import { AiOutlineMail } from "react-icons/ai";
 
 export default function Form() {
@@ -20,12 +20,13 @@ export default function Form() {
   return (
     <div className="form-container">
       <a id="linktocontact" href="#linktocontact"></a>
+      <div className="separator"></div>
 
-      <h1>Contacta con nosotros</h1>
-      <a href="mailto:call4mefb@gmail.com">
+      <a href="mailto:call4mefb@gmail.com" className="title-mail">
         <AiOutlineMail className="mail-icon" />
+        <h1>Contacta con nosotros</h1>
       </a>
-      <form id="contact_form" onSubmit={sendForm}>
+      <form id="contact-form" onSubmit={sendForm}>
         <div className="name">
           <label for="name"></label>
           <input
@@ -56,22 +57,6 @@ export default function Form() {
             required
           />
         </div>
-        <div className="subject">
-          <label for="subject"></label>
-          <select
-            placeholder="Asunto"
-            name="subject"
-            id="subject_input"
-            required
-          >
-            <option disabled hidden selected>
-              Asunto
-            </option>
-            <option>Quiero hacer una mudanza.</option>
-            <option>Quiero pedir un presupuesto.</option>
-            <option>Quiero saber algo más.</option>
-          </select>
-        </div>
         <div className="message">
           <label for="message"></label>
           <textarea
@@ -84,7 +69,7 @@ export default function Form() {
           ></textarea>
         </div>
         <div className="submit">
-          <input type="submit" value="Enviar" id="form_button" />
+          <input type="submit" value="Enviar" id="form-button" />
         </div>
       </form>
     </div>

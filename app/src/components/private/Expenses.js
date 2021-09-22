@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function Expenses() {
-  const [value, setValue] = useState({});
+  const [, setValue] = useState({});
 
   const handleChange = (event) => {
     setValue(event.target.value);
@@ -10,11 +10,11 @@ export default function Expenses() {
   const handleAddExpense = (e) => {
     e.preventDefault();
 
-    const newExpense = {
-      userId: 3, //coger del token,
-      ammount: e.target[1].input["Importe"],
-    };
-    console.log(e);
+    // const newExpense = {
+    //   userId: 3, //coger del token,
+    //   ammount: e.target[1].input["Importe"],
+    // };
+    // console.log(e);
   };
 
   return (

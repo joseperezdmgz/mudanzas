@@ -1,10 +1,10 @@
 import "./css/service-items.css";
 
-export default function Precios() {
+export default function SobreNosotros() {
   return (
     <div className="service-item-container">
       <p>
-        2 - Est aliqua ut proident duis ipsum sunt nulla aliqua cillum amet
+        3 - Est aliqua ut proident duis ipsum sunt nulla aliqua cillum amet
         consequat magna qui. Est consectetur sit nostrud commodo duis qui
         eiusmod. Et irure officia et culpa duis eu mollit nostrud exercitation
         non nostrud non adipisicing non. Mollit do et occaecat sit. Eu ut esse
