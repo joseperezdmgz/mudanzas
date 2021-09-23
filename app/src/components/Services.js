@@ -1,19 +1,52 @@
 import { useState } from "react";
-import Servicios from "./service-items/Servicios";
-import Precios from "./service-items/Precios";
-import SobreNosotros from "./service-items/SobreNosotros";
 import "./css/Services.css";
 
+const services = [
+  <div className="service-item-container" key={0}>
+    <p>
+      1 - Est aliqua ut proident duis ipsum sunt nulla aliqua cillum amet
+      consequat magna qui. Est consectetur sit nostrud commodo duis qui eiusmod.
+      Et irure officia et culpa duis eu mollit nostrud exercitation non nostrud
+      non adipisicing non. Mollit do et occaecat sit. Eu ut esse laborum aliquip
+      officia commodo. Ullamco esse elit dolor officia nulla ipsum irure elit
+      Lorem. Nisi amet commodo eiusmod incididunt officia mollit commodo
+      voluptate.
+    </p>
+  </div>,
+  <div className="service-item-container" key={1}>
+    <p>
+      2 - Est aliqua ut proident duis ipsum sunt nulla aliqua cillum amet
+      consequat magna qui. Est consectetur sit nostrud commodo duis qui eiusmod.
+      Et irure officia et culpa duis eu mollit nostrud exercitation non nostrud
+      non adipisicing non. Mollit do et occaecat sit. Eu ut esse laborum aliquip
+      officia commodo. Ullamco esse elit dolor officia nulla ipsum irure elit
+      Lorem. Nisi amet commodo eiusmod incididunt officia mollit commodo
+      voluptate.
+    </p>
+  </div>,
+  <div className="service-item-container" key={2}>
+    <p>
+      3 - Est aliqua ut proident duis ipsum sunt nulla aliqua cillum amet
+      consequat magna qui. Est consectetur sit nostrud commodo duis qui eiusmod.
+      Et irure officia et culpa duis eu mollit nostrud exercitation non nostrud
+      non adipisicing non. Mollit do et occaecat sit. Eu ut esse laborum aliquip
+      officia commodo. Ullamco esse elit dolor officia nulla ipsum irure elit
+      Lorem. Nisi amet commodo eiusmod incididunt officia mollit commodo
+      voluptate.
+    </p>
+  </div>,
+];
+
 export default function Services() {
-  const [displayService, setDisplayService] = useState(Servicios);
+  const [currentService, setCurrentService] = useState(0);
 
   const changeDisplay = (e) => {
     if (e.target.innerHTML === "Servicios") {
-      setDisplayService(Servicios);
+      setCurrentService(0);
     } else if (e.target.innerHTML === "Precios") {
-      setDisplayService(Precios);
+      setCurrentService(1);
     } else {
-      setDisplayService(SobreNosotros);
+      setCurrentService(2);
     }
   };
 
@@ -25,7 +58,7 @@ export default function Services() {
         <button onClick={changeDisplay}>Precios</button>
         <button onClick={changeDisplay}>Sobre Nosotros</button>
       </div>
-      {displayService}
+      {services[currentService]}
     </div>
   );
 }

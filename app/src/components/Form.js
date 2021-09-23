@@ -28,7 +28,6 @@ export default function Form() {
       </a>
       <form id="contact-form" onSubmit={sendForm}>
         <div className="name">
-          <label for="name"></label>
           <input
             type="text"
             placeholder="Nombre"
@@ -38,7 +37,6 @@ export default function Form() {
           />
         </div>
         <div className="email">
-          <label for="email"></label>
           <input
             type="email"
             placeholder="Email"
@@ -48,7 +46,6 @@ export default function Form() {
           />
         </div>
         <div className="telephone">
-          <label for="name"></label>
           <input
             type="text"
             placeholder="Teléfono"
@@ -58,19 +55,16 @@ export default function Form() {
           />
         </div>
         <div className="message">
-          <label for="message"></label>
           <textarea
             name="message"
-            placeholder="Cuéntanos lo que quieras"
+            placeholder="¿En qué podemos ayudarte?"
             id="message_input"
             cols="30"
             rows="5"
             required
           ></textarea>
         </div>
-        <div className="submit">
-          <input type="submit" value="Enviar" id="form-button" />
-        </div>
+        <input type="submit" value="Enviar" id="form-button" />
       </form>
     </div>
   );

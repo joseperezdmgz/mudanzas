@@ -26,21 +26,16 @@ export default function NavBar() {
           </li>
 
           <li className="nav-text">
-            <a className="nav-text" href="#linktohome">
-              Inicio
-            </a>
+            <a href="#linktohome">Inicio</a>
           </li>
           <li className="nav-text">
             <a href="#linktoservices">Servicios</a>
           </li>
           <li className="nav-text">
-            <a href="#linktomain">Principal</a>
-          </li>
-          <li className="nav-text">
             <a href="#linktocontact">Contacto</a>
           </li>
-          <li>
-            <Link to={"/login"}>Soy Nómada</Link>
+          <li className="nav-text">
+            <Link to={"/login"}>Iniciar Sesión</Link>
           </li>
         </ul>
       </nav>

@@ -3,8 +3,8 @@ import "./css/Carousel.css";
 
 const slides = [
   <div className="slide" key={0}>
-    <div>
-      <h1>0 - Esse dolore voluptate ipsum irure sint quis excepteur irure.</h1>
+    <div className="slide-text">
+      <h1>1 - Esse dolore voluptate ipsum irure sint quis excepteur irure.</h1>
       <p>
         Ea excepteur in commodo id cillum sunt excepteur adipisicing labore non.
         Labore adipisicing ipsum anim magna ex incididunt. Id veniam pariatur
@@ -12,12 +12,16 @@ const slides = [
         exercitation. Eu sit excepteur ipsum quis ea est.
       </p>
     </div>
-    <img alt="" src="carretera.png" />
+    <div className="slide-image">
+      <img alt="" src="carretera.png" />
+    </div>
   </div>,
-  <div className="slide" key={1}>
-    <img alt="" src="frente.png" />
-    <div>
-      <h1>1 - Esse dolore voluptate ipsum irure sint quis excepteur irure.</h1>
+  <div className="slide left" key={1}>
+    <div className="slide-image">
+      <img alt="" src="frente.png" />
+    </div>
+    <div className="slide-text">
+      <h1>2 - Esse dolore voluptate ipsum irure sint quis excepteur irure.</h1>
       <p>
         Ea excepteur in commodo id cillum sunt excepteur adipisicing labore non.
         Labore adipisicing ipsum anim magna ex incididunt. Id veniam pariatur
@@ -27,8 +31,8 @@ const slides = [
     </div>
   </div>,
   <div className="slide" key={2}>
-    <div>
-      <h1>2 - Esse dolore voluptate ipsum irure sint quis excepteur irure.</h1>
+    <div className="slide-text">
+      <h1>3 - Esse dolore voluptate ipsum irure sint quis excepteur irure.</h1>
       <p>
         Ea excepteur in commodo id cillum sunt excepteur adipisicing labore non.
         Labore adipisicing ipsum anim magna ex incididunt. Id veniam pariatur
@@ -36,12 +40,16 @@ const slides = [
         exercitation. Eu sit excepteur ipsum quis ea est.
       </p>
     </div>
-    <img alt="" src="interior.png" />
+    <div className="slide-image">
+      <img alt="" src="interior.png" />
+    </div>
   </div>,
-  <div className="slide" key={3}>
-    <img alt="" src="playa.png" />
-    <div>
-      <h1>3 - Esse dolore voluptate ipsum irure sint quis excepteur irure.</h1>
+  <div className="slide left" key={3}>
+    <div className="slide-image">
+      <img alt="" src="playa.png" />
+    </div>
+    <div className="slide-text">
+      <h1>4 - Esse dolore voluptate ipsum irure sint quis excepteur irure.</h1>
       <p>
         Ea excepteur in commodo id cillum sunt excepteur adipisicing labore non.
         Labore adipisicing ipsum anim magna ex incididunt. Id veniam pariatur
